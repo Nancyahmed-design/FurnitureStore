@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     background-color: #242426;
+    overflow: hidden;
 }
 h2{
     color:#707070;
@@ -26,4 +27,5 @@ h2 span{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
