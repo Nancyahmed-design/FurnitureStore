@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    background-color: #242426;
+}
+h2{
+    color:#707070;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:34px;
+    font-weight: bold;
+    height: 30vh;
+    
+    
+
+
+}
+h2 span{
+    color:#D96B43;
+    text-align:center;
+    font-family: 'Otomanopee One', sans-serif;
+
+}
+.brands{
+    height: 30vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

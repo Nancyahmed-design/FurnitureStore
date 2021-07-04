@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif
+}
+a{
+    text-decoration:none
+}
+.page{
+    display:grid;
+    /* background-color: blue; */
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: 50px 100vh;
+    grid-template-areas:
+     "lnk  lnk  lnk  lnk  logo logo logo logo logo logo logo logo"
+     "form form form form form form form form card card card card";
+}
+/* start of header */
+.top-link{
+    grid-area:lnk;
+    /* background-color: blueviolet; */
+    color: #151515;
+    padding: 10px;
+}
+.logo{
+    grid-area:logo;
+    /* background-color: rgb(86, 226, 43); */
+    color: #332532;
+    height: 50px;
+}
+/* end of header */
+/* start of form */
+
+.ship-form{
+    grid-area:form;
+    /* background-color: rgb(48, 112, 231); */
+    color: #151515;
+}
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 30px;
+    padding: 5px;
+    background: black;
+    border: 3px solid #000;
+    color: white;
+    text-align: center;
+    font-size: 20px ;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    flex-direction:row; 
+    justify-content: flex-start;
+
+
+  }
+  .circle >a{
+      color: black;
+      transform: translate(30px);
+  }
+  .ship{
+      color:#707070;
+      margin-top: -55px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: flex-end;
+  }
+  select {
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    color:#707070;
+}
+input:focus { 
+    
+    outline-color: #FFB26B !important;
+   
+}
+/* submit form */
+.submit-form{
+    padding: 10px;
+    margin:20px;
+    font-weight: bold;
+   
+
+
+}
+
+#email,#number,#pastcode,#city{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+}
+.label-align,.input-align{
+    display: flex;
+    justify-content: space-between;
+}
+
+#name, #adrress{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 45%;
+    background-color: #FFB26B;
+    color: #332532;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* pay-circle */
+  .pay-circle{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 8px;
+    padding: 8px;
+    background: rgb(201, 199, 199);
+    border: 3px solid rgb(201, 199, 199);
+    color: #332523;
+    text-align: center;
+    font-size: 14px ;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    flex-direction:row; 
+    justify-content: flex-start;
+   
+  }
+  .pay-circle >a{
+    color: #332523;
+    transform: translate(30px);
+}
+.outside-border{
+    border: 2px solid rgb(219, 218, 218);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 35px;
+}
+  /* end of form */
+/* start of card */
+
+.card{
+    grid-area:card;
+    /* background-color: rgb(7, 119, 22); */
+    color: #332532;
+    margin:0 0 0 70px ;
+    
+    padding: 15px;
+}
+.card-item{
+    display: flex;
+    justify-content: space-between;
+}
+div >p{
+    float:right;
+}
+.name-card{
+    font-weight: bold;
+    margin: 20px;
+    padding: 15px;
+}
+.total-card{
+    font-weight: bold;
+    font-size: 24px;
+}
+.card-price{
+    margin:10px;
+}
+/* end of card */
